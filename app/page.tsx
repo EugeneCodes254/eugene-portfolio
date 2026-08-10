@@ -1,104 +1,28 @@
 const projects = [
-  {
-    title: "SecureOps Platform",
-    description: "A full-stack security operations management MVP bringing authentication, operational workflows, APIs and a structured data layer into one web application.",
-    stack: ["Next.js", "TypeScript", "Node.js", "Express", "Prisma", "PostgreSQL"],
-    href: "https://github.com/EugeneCodes254/secureops-platform",
-  },
-  {
-    title: "Flutter Billing App",
-    description: "A billing application project demonstrating application development beyond traditional web experiences.",
-    stack: ["Flutter", "Dart", "Application Development"],
-    href: "https://github.com/EugeneCodes254/flutter_billing_app",
-  },
-  {
-    title: "Kanopy Holdings",
-    description: "A business-focused web project created to present a company's services and digital presence through a modern interface.",
-    stack: ["Web Development", "Responsive UI", "Business Systems"],
-    href: "https://github.com/EugeneCodes254/kanopy-holdings",
-  },
-  {
-    title: "Cancer Website",
-    description: "A responsive informational website focused on clear content presentation and an accessible user experience.",
-    stack: ["HTML", "CSS", "JavaScript", "Responsive Design"],
-    href: "https://github.com/EugeneCodes254/cancer-website-main",
-  },
+  { title: "SecureOps Platform", description: "A full-stack security operations management MVP bringing authentication, operational workflows, APIs and a structured data layer into one web application.", stack: ["Next.js", "TypeScript", "Node.js", "Express", "Prisma", "PostgreSQL"], href: "https://github.com/EugeneCodes254/secureops-platform" },
+  { title: "Flutter Billing App", description: "A billing application project demonstrating application development beyond traditional web experiences.", stack: ["Flutter", "Dart", "Application Development"], href: "https://github.com/EugeneCodes254/flutter_billing_app" },
+  { title: "Kanopy Holdings", description: "A business-focused web project created to present a company's services and digital presence through a modern interface.", stack: ["Web Development", "Responsive UI", "Business Systems"], href: "https://github.com/EugeneCodes254/kanopy-holdings" },
+  { title: "Cancer Website", description: "A responsive informational website focused on clear content presentation and an accessible user experience.", stack: ["HTML", "CSS", "JavaScript", "Responsive Design"], href: "https://github.com/EugeneCodes254/cancer-website-main" },
 ];
 
-const skills = [
-  "JavaScript", "TypeScript", "Python", "React", "Next.js", "Node.js", "Express.js", "Django", "Tailwind CSS", "PostgreSQL", "Prisma", "Pandas", "REST APIs", "Git", "GitHub", "Vercel",
-];
+const skills = ["JavaScript", "TypeScript", "Python", "React", "Next.js", "Node.js", "Express.js", "Django", "Tailwind CSS", "PostgreSQL", "Prisma", "Pandas", "REST APIs", "Git", "GitHub", "Vercel"];
 
 export default function Home() {
   return (
     <main>
-      <nav className="nav">
-        <div className="container nav-inner">
-          <a className="logo" href="#top">Eugene<span>.</span></a>
-          <div className="nav-links">
-            <a href="#about">About</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
-          </div>
-        </div>
-      </nav>
+      <nav className="nav"><div className="container nav-inner"><a className="logo" href="#top">Eugene<span>.</span></a><div className="nav-links"><a href="#about">About</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></div></nav>
 
-      <header className="hero" id="top">
-        <div className="container">
-          <div className="eyebrow">Software Developer · Mombasa, Kenya</div>
-          <h1>I build software that turns <span>ideas into useful products.</span></h1>
-          <p>I&apos;m Eugene Kinyangi, a Computer Science developer focused on full-stack web applications, business systems, AI/data workflows and practical digital solutions.</p>
-          <div className="actions">
-            <a className="button primary" href="#work">View my work ↓</a>
-            <a className="button" href="mailto:kinyangie@gmail.com">Let&apos;s work together</a>
-            <a className="button" href="https://github.com/EugeneCodes254">GitHub ↗</a>
-          </div>
-        </div>
-      </header>
+      <header className="hero" id="top"><div className="container"><div className="eyebrow">Software Developer · Mombasa, Kenya</div><h1>I build software that turns <span>ideas into useful products.</span></h1><p>I&apos;m Eugene Kinyangi, a Computer Science developer focused on full-stack web applications, business systems, AI/data workflows and practical digital solutions.</p><div className="actions"><a className="button primary" href="#work">View my work ↓</a><a className="button" href="mailto:kinyangie@gmail.com">Let&apos;s work together</a><a className="button" href="https://github.com/EugeneCodes254">GitHub ↗</a></div></div></header>
 
-      <section id="about">
-        <div className="container">
-          <div className="section-label">01 — About</div>
-          <h2>Developer with a practical mindset.</h2>
-          <p className="section-intro">I develop websites, e-commerce platforms and custom systems for clients and personal projects. I enjoy working across the stack—from interface design and APIs to databases, validation and deployment—and I&apos;m building deeper expertise in AI, data analytics, cloud and cybersecurity.</p>
-          <div className="grid">
-            <article className="card"><h3>Client & Freelance Work</h3><p>Built 15+ general websites, around 3 e-commerce websites and custom digital systems, working directly with clients from requirements through delivery.</p></article>
-            <article className="card"><h3>AI & Data</h3><p>Hands-on exposure to AI annotation and evaluation workflows, data-quality review, validation and Python/Pandas-based analytics.</p></article>
-          </div>
-        </div>
-      </section>
+      <section id="about"><div className="container"><div className="section-label">01 — About</div><h2>Developer with a practical mindset.</h2><p className="section-intro">I develop websites, e-commerce platforms and custom systems for clients and personal projects. I enjoy working across the stack—from interface design and APIs to databases, validation and deployment—and I&apos;m building deeper expertise in AI, data analytics, cloud and cybersecurity.</p><div className="stats"><div className="stat"><strong>15+</strong><span>General websites built</span></div><div className="stat"><strong>3+</strong><span>E-commerce projects</span></div><div className="stat"><strong>Full-stack</strong><span>Frontend to backend delivery</span></div></div><div className="grid"><article className="card"><h3>Client & Freelance Work</h3><p>Built websites, e-commerce platforms and custom digital systems while working directly with clients from requirements through delivery.</p></article><article className="card"><h3>AI & Data</h3><p>Hands-on exposure to AI annotation and evaluation workflows, data-quality review, validation and Python/Pandas-based analytics.</p></article></div></div></section>
 
-      <section id="work">
-        <div className="container">
-          <div className="section-label">02 — Selected work</div>
-          <h2>Things I&apos;ve built.</h2>
-          <p className="section-intro">A selection of projects that show how I approach web development, applications and business-focused software.</p>
-          <div className="grid">
-            {projects.map((project) => (
-              <a className="card" href={project.href} target="_blank" rel="noreferrer" key={project.title}>
-                <h3>{project.title} ↗</h3><p>{project.description}</p>
-                <div className="tags">{project.stack.map((item) => <span className="tag" key={item}>{item}</span>)}</div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
+      <section id="work"><div className="container"><div className="section-label">02 — Selected work</div><h2>Things I&apos;ve built.</h2><p className="section-intro">A selection of projects that show how I approach web development, applications and business-focused software.</p><div className="grid">{projects.map((project) => <a className="card" href={project.href} target="_blank" rel="noreferrer" key={project.title}><h3>{project.title} ↗</h3><p>{project.description}</p><div className="tags">{project.stack.map((item) => <span className="tag" key={item}>{item}</span>)}</div></a>)}</div></div></section>
 
-      <section id="skills">
-        <div className="container">
-          <div className="section-label">03 — Toolkit</div>
-          <h2>Technologies I work with.</h2>
-          <p className="section-intro">A growing toolkit across software engineering, data and modern web development.</p>
-          <div className="skills">{skills.map((skill) => <span className="skill" key={skill}>{skill}</span>)}</div>
-        </div>
-      </section>
+      <section id="experience"><div className="container"><div className="section-label">03 — Experience</div><h2>How I&apos;ve been building.</h2><div className="timeline"><div className="timeline-item"><h3>Freelance Software Developer</h3><p>Client & personal projects · Kenya</p><p>Developed 15+ general websites, around 3 e-commerce websites and custom systems. Worked through requirements, implementation, troubleshooting, testing and delivery.</p></div><div className="timeline-item"><h3>AI & Data Workflows</h3><p>Annotation · Evaluation · Data Quality</p><p>Built practical familiarity with human-in-the-loop AI workflows, output evaluation, data validation, quality review and pipeline verification.</p></div><div className="timeline-item"><h3>Computer Science</h3><p>Mount Kenya University · Final year</p><p>Developing a broad technical foundation across software engineering, programming, databases, data and computing systems.</p></div></div></div></section>
 
-      <section id="contact" className="contact">
-        <div className="container">
-          <div className="section-label">04 — Contact</div>
-          <h2>Have a project in mind?</h2>
-          <p>I&apos;m open to remote software development, AI/data evaluation, data-quality and freelance opportunities. If you have a problem worth solving, let&apos;s talk.</p>
-          <div className="actions" style={{justifyContent: "center"}}><a className="button primary" href="mailto:kinyangie@gmail.com">Email Eugene</a><a className="button" href="https://github.com/EugeneCodes254">GitHub ↗</a></div>
-        </div>
-      </section>
+      <section id="skills"><div className="container"><div className="section-label">04 — Toolkit</div><h2>Technologies I work with.</h2><p className="section-intro">A growing toolkit across software engineering, data and modern web development.</p><div className="skills">{skills.map((skill) => <span className="skill" key={skill}>{skill}</span>)}</div></div></section>
+
+      <section id="contact" className="contact"><div className="container"><div className="section-label">05 — Contact</div><h2>Have a project in mind?</h2><p>I&apos;m open to remote software development, AI/data evaluation, data-quality and freelance opportunities. If you have a problem worth solving, let&apos;s talk.</p><div className="actions" style={{justifyContent:"center"}}><a className="button primary" href="mailto:kinyangie@gmail.com">Email Eugene</a><a className="button" href="https://github.com/EugeneCodes254">GitHub ↗</a></div></div></section>
 
       <footer><div className="container footer-inner"><span>© 2026 Eugene Kinyangi</span><span>Mombasa, Kenya · Built with Next.js</span></div></footer>
     </main>
