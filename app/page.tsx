@@ -7,6 +7,7 @@ const projects = [
     highlights: ["Authentication + account recovery", "OTP verification", "REST API integration", "Modular backend architecture"],
     stack: ["Next.js", "TypeScript", "Node.js", "Express", "Prisma", "PostgreSQL"],
     href: "https://github.com/EugeneCodes254/secureops-platform",
+    caseStudy: "/work/secureops",
   },
   {
     title: "Mobile POS & Billing App",
@@ -15,6 +16,7 @@ const projects = [
     highlights: ["Offline-first with Hive", "Barcode / QR scanning", "Bluetooth thermal printing", "Clean Architecture"],
     stack: ["Flutter", "Dart", "BLoC", "Hive", "GetIt", "GoRouter"],
     href: "https://github.com/EugeneCodes254/flutter_billing_app",
+    caseStudy: "/work/mobile-pos-billing",
   },
   {
     title: "Kannopy Holdings",
@@ -98,46 +100,13 @@ export default function Home() {
         </div>
       </header>
 
-      <section id="about">
-        <div className="container">
-          <div className="section-label">01 — About</div>
-          <h2>Developer with a practical mindset.</h2>
-          <p className="section-intro">I&apos;ve worked on client and personal projects across websites, e-commerce, business applications, mobile software and security-focused systems. I enjoy taking a requirement from an idea to a working product—designing the interface, wiring the backend, working with data and deploying the result.</p>
-          <div className="stats"><div className="stat"><strong>15+</strong><span>General websites</span></div><div className="stat"><strong>3+</strong><span>E-commerce projects</span></div><div className="stat"><strong>7+</strong><span>Public GitHub projects</span></div><div className="stat"><strong>Full-stack</strong><span>Frontend → API → database</span></div></div>
-          <div className="grid two-up"><article className="card"><h3>Engineering</h3><p>Modern React/Next.js interfaces, REST APIs, authentication, PostgreSQL databases, ORM tooling, deployment and practical debugging.</p></article><article className="card"><h3>AI & Data</h3><p>Hands-on exposure to AI annotation/evaluation, data validation and quality workflows, supported by Python and Pandas skills.</p></article></div>
-        </div>
-      </section>
+      <section id="about"><div className="container"><div className="section-label">01 — About</div><h2>Developer with a practical mindset.</h2><p className="section-intro">I&apos;ve worked on client and personal projects across websites, e-commerce, business applications, mobile software and security-focused systems. I enjoy taking a requirement from an idea to a working product—designing the interface, wiring the backend, working with data and deploying the result.</p><div className="stats"><div className="stat"><strong>15+</strong><span>General websites</span></div><div className="stat"><strong>3+</strong><span>E-commerce projects</span></div><div className="stat"><strong>7+</strong><span>Public GitHub projects</span></div><div className="stat"><strong>Full-stack</strong><span>Frontend → API → database</span></div></div><div className="grid two-up"><article className="card"><h3>Engineering</h3><p>Modern React/Next.js interfaces, REST APIs, authentication, PostgreSQL databases, ORM tooling, deployment and practical debugging.</p></article><article className="card"><h3>AI & Data</h3><p>Hands-on exposure to AI annotation/evaluation, data validation and quality workflows, supported by Python and Pandas skills.</p></article></div></div></section>
 
-      <section id="work">
-        <div className="container">
-          <div className="section-label">02 — Selected work</div>
-          <h2>Projects that show range.</h2>
-          <p className="section-intro">Instead of listing every repository, these are the projects that best demonstrate the breadth of my work. Each card links directly to the source code.</p>
-          <div className="featured-project">
-            <div><span className="project-kicker">Featured project</span><h3>SecureOps Platform</h3><p>A full-stack security operations management MVP combining authentication, account recovery, APIs, database integration and a modular backend.</p><div className="tags">{projects[0].stack.map((item) => <span className="tag" key={item}>{item}</span>)}</div></div>
-            <div className="featured-points">{projects[0].highlights.map((item) => <div key={item}>✓ {item}</div>)}<a className="text-link" href={projects[0].href} target="_blank" rel="noreferrer">View repository →</a></div>
-          </div>
-          <div className="grid projects-grid">
-            {projects.slice(1).map((project) => (
-              <a className="card project-card" href={project.href} target="_blank" rel="noreferrer" key={project.title}>
-                <div className="project-meta"><span>{project.category}</span><span>↗</span></div>
-                <h3>{project.title}</h3><p>{project.description}</p>
-                <div className="project-highlights">{project.highlights.map((item) => <span key={item}>{item}</span>)}</div>
-                <div className="tags">{project.stack.map((item) => <span className="tag" key={item}>{item}</span>)}</div>
-              </a>
-            ))}
-          </div>
-          <div className="center-action"><a className="button" href="https://github.com/EugeneCodes254?tab=repositories">See all GitHub repositories →</a></div>
-        </div>
-      </section>
+      <section id="work"><div className="container"><div className="section-label">02 — Selected work</div><h2>Projects that show range.</h2><p className="section-intro">Instead of listing every repository, these are the projects that best demonstrate the breadth of my work. The two strongest projects now have dedicated case studies.</p><div className="featured-project"><div><span className="project-kicker">Featured project · Case study</span><h3>SecureOps Platform</h3><p>A full-stack security operations management MVP combining authentication, account recovery, APIs, database integration and a modular backend.</p><div className="tags">{projects[0].stack.map((item) => <span className="tag" key={item}>{item}</span>)}</div><div className="project-actions"><a className="button primary" href={projects[0].caseStudy}>Read case study →</a><a className="text-link" href={projects[0].href} target="_blank" rel="noreferrer">View repository ↗</a></div></div><div className="featured-points">{projects[0].highlights.map((item) => <div key={item}>✓ {item}</div>)}</div></div><div className="grid projects-grid">{projects.slice(1).map((project) => (<a className="card project-card" href={project.caseStudy || project.href} target={project.caseStudy ? undefined : "_blank"} rel={project.caseStudy ? undefined : "noreferrer"} key={project.title}><div className="project-meta"><span>{project.category}</span><span>↗</span></div><h3>{project.title}</h3><p>{project.description}</p><div className="project-highlights">{project.highlights.map((item) => <span key={item}>{item}</span>)}</div><div className="tags">{project.stack.map((item) => <span className="tag" key={item}>{item}</span>)}</div>{project.caseStudy && <div className="case-study-link">Read detailed case study →</div>}</a>))}</div><div className="center-action"><a className="button" href="https://github.com/EugeneCodes254?tab=repositories">See all GitHub repositories →</a></div></div></section>
 
-      <section id="services">
-        <div className="container"><div className="section-label">03 — What I can do</div><h2>Useful software, not just pretty pages.</h2><div className="grid services-grid">{services.map(([title, description]) => <article className="card" key={title}><span className="service-number">0{services.findIndex(([t]) => t === title) + 1}</span><h3>{title}</h3><p>{description}</p></article>)}</div></div>
-      </section>
+      <section id="services"><div className="container"><div className="section-label">03 — What I can do</div><h2>Useful software, not just pretty pages.</h2><div className="grid services-grid">{services.map(([title, description]) => <article className="card" key={title}><span className="service-number">0{services.findIndex(([t]) => t === title) + 1}</span><h3>{title}</h3><p>{description}</p></article>)}</div></div></section>
 
-      <section id="experience">
-        <div className="container"><div className="section-label">04 — Experience</div><h2>How I&apos;ve been building.</h2><div className="timeline"><div className="timeline-item"><h3>Freelance Software Developer</h3><p>Client & personal projects · Kenya</p><p>Developed websites, e-commerce projects and custom systems; handled requirements, implementation, troubleshooting, testing and delivery.</p></div><div className="timeline-item"><h3>AI & Data Workflows</h3><p>Annotation · Evaluation · Data Quality</p><p>Built practical familiarity with human-in-the-loop AI workflows, output evaluation, data validation, quality review and pipeline verification.</p></div><div className="timeline-item"><h3>BSc Computer Science</h3><p>Mount Kenya University · 2026</p><p>Building a broad technical foundation across software engineering, programming, databases, data and computing systems.</p></div></div></div>
-      </section>
+      <section id="experience"><div className="container"><div className="section-label">04 — Experience</div><h2>How I&apos;ve been building.</h2><div className="timeline"><div className="timeline-item"><h3>Freelance Software Developer</h3><p>Client & personal projects · Kenya</p><p>Developed websites, e-commerce projects and custom systems; handled requirements, implementation, troubleshooting, testing and delivery.</p></div><div className="timeline-item"><h3>AI & Data Workflows</h3><p>Annotation · Evaluation · Data Quality</p><p>Built practical familiarity with human-in-the-loop AI workflows, output evaluation, data validation, quality review and pipeline verification.</p></div><div className="timeline-item"><h3>BSc Computer Science</h3><p>Mount Kenya University · 2026</p><p>Building a broad technical foundation across software engineering, programming, databases, data and computing systems.</p></div></div></div></section>
 
       <section id="skills"><div className="container"><div className="section-label">05 — Toolkit</div><h2>Technologies I work with.</h2><p className="section-intro">A practical stack spanning web engineering, mobile development, data and modern developer tooling.</p><div className="skills">{skills.map((skill) => <span className="skill" key={skill}>{skill}</span>)}</div></div></section>
 
