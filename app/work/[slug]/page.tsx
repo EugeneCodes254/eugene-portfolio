@@ -52,6 +52,23 @@ const caseStudies: Record<string, CaseStudy> = {
   },
 };
 
+  bizflow: {
+    slug: "bizflow",
+    title: "BizFlow",
+    eyebrow: "Full-Stack · SME Business Management",
+    summary: "A modular business-management platform for SMEs, with a backend covering authentication, customers, products, sales, invoices, payments, expenses, suppliers and dashboard workflows.",
+    problem: "Small and growing businesses often need connected workflows for sales, customers, inventory-related records, invoices, payments and expenses instead of isolated spreadsheets or disconnected tools.",
+    solution: "I built a modular Express and TypeScript API backed by Prisma and PostgreSQL. The backend separates business capabilities into modules for auth, customers, products, sales, invoices, payments, expenses, suppliers and dashboard data, creating a foundation that can support a richer business-management frontend.",
+    role: ["Backend architecture and API development", "Authentication and request validation", "Business module design", "Prisma/PostgreSQL integration", "API troubleshooting and database migrations"],
+    outcomes: ["Database-backed SME management foundation", "Separate modules for core business workflows", "Sales, invoicing and payment API foundations", "Supplier and expense management workflows", "Dashboard data endpoints for operational visibility"],
+    stack: ["Node.js", "Express.js", "TypeScript", "Prisma 7", "PostgreSQL", "Zod", "JWT"],
+    features: ["Authentication", "Customer management", "Product management", "Sales", "Invoices", "Payments", "Expenses", "Suppliers", "Dashboard"],
+    architecture: ["Web frontend", "Express REST API", "Module controllers + services", "Prisma ORM", "PostgreSQL"],
+    github: "https://github.com/EugeneCodes254/bizflow",
+    visualLabel: "BIZFLOW / SME OPERATIONS",
+    visualLines: ["Sales & invoices", "Customers & products", "Payments & expenses", "PostgreSQL data layer"],
+  },
+
 export function generateStaticParams() {
   return Object.keys(caseStudies).map((slug) => ({ slug }));
 }
