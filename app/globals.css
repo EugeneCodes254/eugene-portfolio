@@ -47,7 +47,7 @@ section{scroll-margin-top:86px}
 .project-card:hover .project-image img{transform:scale(1.025)}
 @media(max-width:720px){.identity-card{align-items:flex-start}.brand-card{align-items:flex-start}.brand-mark{width:50px;height:50px;flex-basis:50px}.project-image{height:190px}}
 
-.current-build-grid{grid-template-columns:repeat(2,1fr)}.current-build{position:relative;overflow:hidden}.build-badge{display:inline-flex;padding:6px 9px;border:1px solid #25466d;border-radius:999px;color:#60a5fa;background:#0c1726;font-size:10px;font-weight:900;letter-spacing:.1em}.current-build h3{margin-top:18px}.project-status{margin-top:16px;color:#60a5fa;font-size:11px;font-weight:800;letter-spacing:.06em}.current-build .case-study-link{display:block;margin-top:18px}@media(max-width:720px){.current-build-grid{grid-template-columns:1fr}}
+.current-build-grid{grid-template-columns:repeat(3,1fr)}.current-build{position:relative;overflow:hidden}.build-badge{display:inline-flex;padding:6px 9px;border:1px solid #25466d;border-radius:999px;color:#60a5fa;background:#0c1726;font-size:10px;font-weight:900;letter-spacing:.1em}.current-build h3{margin-top:18px}.project-status{margin-top:16px;color:#60a5fa;font-size:11px;font-weight:800;letter-spacing:.06em}.current-build .case-study-link{display:block;margin-top:18px}@media(max-width:720px){.current-build-grid{grid-template-columns:1fr}}
 
 /* Active product visual system */
 .featured-status{display:inline-flex;align-items:center;width:max-content;padding:6px 9px;border:1px solid #24553a;border-radius:999px;background:#0b2118;color:#86efac;font-size:10px;font-weight:900;letter-spacing:.1em}
@@ -88,4 +88,4 @@ section{scroll-margin-top:86px}
 .community-mark span{position:absolute;width:6px;height:6px;border-radius:50%;background:#86efac}
 .community-mark span:nth-child(1){left:17px;top:49px}.community-mark span:nth-child(2){right:17px;top:49px}.community-mark span:nth-child(3){left:48px;top:10px}.community-mark span:nth-child(4){left:12px;bottom:20px}.community-mark span:nth-child(5){right:12px;bottom:20px}
 .current-build h3{font-size:24px}
-@media(max-width:720px){.build-visual{min-height:190px}.brand-orb,.community-mark{width:82px;height:82px;flex-basis:82px}.brand-orb b{font-size:45px}.build-visual-copy strong{font-size:18px}.bizflow-visual,.chamaos-visual{gap:17px;padding:22px}.visual-shell{width:88%}}
+@media(max-width:900px){.current-build-grid{grid-template-columns:1fr 1fr}}\n@media(max-width:720px){.build-visual{min-height:190px}.brand-orb,.community-mark{width:82px;height:82px;flex-basis:82px}.brand-orb b{font-size:45px}.build-visual-copy strong{font-size:18px}.bizflow-visual,.chamaos-visual{gap:17px;padding:22px}.visual-shell{width:88%}}
