@@ -5,3 +5,31 @@
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}@keyframes float{0%,100%{transform:translate(0,0)}50%{transform:translate(-18px,18px)}}
 @media(max-width:900px){.hero-grid,.featured-project,.case-grid,.case-two-col{grid-template-columns:1fr}.hero-card{max-width:500px}.stats{grid-template-columns:repeat(2,1fr)}.services-grid{grid-template-columns:repeat(2,1fr)}.case-visual{position:relative;top:auto}.feature-grid{grid-template-columns:repeat(2,1fr)}.architecture{flex-direction:column}.architecture-step{border-right:0;border-bottom:1px solid var(--border)}.architecture-step:last-child{border-bottom:0}.architecture-step b{right:24px;top:auto;bottom:-7px;transform:rotate(90deg)}}@media(max-width:720px){.nav-links{display:none}.container{width:min(100% - 28px,1120px)}.hero{min-height:78vh}.hero-grid{gap:35px}.hero h1{font-size:clamp(46px,14vw,68px)}.hero p{font-size:17px}.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.services-grid,.feature-grid{grid-template-columns:1fr}section{padding:72px 0}.footer-inner{flex-direction:column}.case-hero{padding:60px 0}.case-hero h1{font-size:clamp(46px,14vw,68px)}.case-section{padding:72px 0}.case-grid{gap:42px}.case-grid h2{font-size:30px}.case-two-col{gap:45px}.visual-body{grid-template-columns:52px 1fr}.visual-sidebar{padding:25px 14px}.visual-content{padding:22px}.case-cta{padding:80px 0}.back-link{margin-bottom:35px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+
+
+/* Presentation polish */
+section{scroll-margin-top:86px}
+.proof-strip{border-top:1px solid rgba(148,163,184,.08);border-bottom:1px solid rgba(148,163,184,.08);background:rgba(13,20,32,.45)}
+.proof-strip-inner{min-height:62px;display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap;color:#7890ad;font-size:10px;font-weight:800;letter-spacing:.16em}
+.proof-strip-inner i{width:4px;height:4px;border-radius:50%;background:#315784}
+.mobile-nav{display:none;position:relative}
+.mobile-nav summary{list-style:none;cursor:pointer;padding:9px 12px;border:1px solid var(--border);border-radius:9px;color:#cbd5e1;font-size:12px;font-weight:800}
+.mobile-nav summary::-webkit-details-marker{display:none}
+.mobile-nav-panel{position:absolute;right:0;top:48px;width:190px;padding:8px;border:1px solid var(--border);border-radius:14px;background:rgba(9,14,23,.98);box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.mobile-nav-panel a{display:block;padding:12px;border-radius:8px;color:#cbd5e1;font-size:13px}
+.mobile-nav-panel a:hover{background:#101c2d;color:#fff}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:38px}
+.process-step{position:relative;min-height:230px;padding:26px;border:1px solid var(--border);border-radius:18px;background:linear-gradient(145deg,rgba(13,20,32,.9),rgba(9,14,23,.9));overflow:hidden}
+.process-step:after{content:"";position:absolute;width:100px;height:100px;border-radius:50%;right:-45px;bottom:-45px;background:rgba(59,130,246,.07)}
+.process-step>span{color:var(--accent2);font-size:11px;font-weight:800;letter-spacing:.12em}
+.process-step h3{margin:28px 0 10px;font-size:20px}
+.process-step p{margin:0;color:var(--muted);line-height:1.65;font-size:14px}
+.footer-inner{align-items:center}
+.footer-inner>div:first-child{display:flex;flex-direction:column;gap:5px}
+.footer-inner strong{font-size:16px;color:#e8eef8}
+.footer-inner strong span{color:var(--accent2)}
+.footer-inner small{color:var(--muted)}
+.footer-links{display:flex!important;flex-direction:row!important;gap:18px}
+.footer-links a{color:#93c5fd;font-weight:700;font-size:13px}
+@media(max-width:900px){.process-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){.nav-links{display:none}.mobile-nav{display:block}.proof-strip-inner{justify-content:flex-start;overflow:hidden;flex-wrap:nowrap;white-space:nowrap;gap:12px}.proof-strip-inner i{flex:0 0 4px}.process-grid{grid-template-columns:1fr}.process-step{min-height:auto}.footer-inner{align-items:flex-start}.footer-links{order:2}.footer-inner>small{order:3}}
