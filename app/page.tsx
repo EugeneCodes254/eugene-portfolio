@@ -22,6 +22,14 @@ const projects = [
     caseStudy: "/work/mobile-pos-billing",
   },
   {
+    title: "Destination@Bofa",
+    category: "Hospitality / Luxury Property",
+    description: "A polished luxury beachfront villa website for The Destination@Bofa in Bofa, Kilifi, presenting the twin villas, gallery, property videos, services, rates and booking enquiries.",
+    highlights: ["Luxury villa presentation", "Image gallery + property videos", "Responsive guest experience", "Booking enquiry flow"],
+    stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    href: "https://github.com/EugeneCodes254/destination-bofa",
+  },
+  {
     title: "BizFlow",
     category: "SME Business Management",
     status: "Backend foundation in active development",
