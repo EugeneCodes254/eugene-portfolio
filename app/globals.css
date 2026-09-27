@@ -88,7 +88,8 @@ section{scroll-margin-top:86px}
 .community-mark span{position:absolute;width:6px;height:6px;border-radius:50%;background:#86efac}
 .community-mark span:nth-child(1){left:17px;top:49px}.community-mark span:nth-child(2){right:17px;top:49px}.community-mark span:nth-child(3){left:48px;top:10px}.community-mark span:nth-child(4){left:12px;bottom:20px}.community-mark span:nth-child(5){right:12px;bottom:20px}
 .current-build h3{font-size:24px}
-@media(max-width:900px){.current-build-grid{grid-template-columns:1fr 1fr}}\n@media(max-width:720px){.build-visual{min-height:190px}.brand-orb,.community-mark{width:82px;height:82px;flex-basis:82px}.brand-orb b{font-size:45px}.build-visual-copy strong{font-size:18px}.bizflow-visual,.chamaos-visual{gap:17px;padding:22px}.visual-shell{width:88%}}
+@media(max-width:900px){.current-build-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.build-visual{min-height:190px}.brand-orb,.community-mark{width:82px;height:82px;flex-basis:82px}.brand-orb b{font-size:45px}.build-visual-copy strong{font-size:18px}.bizflow-visual,.chamaos-visual{gap:17px;padding:22px}.visual-shell{width:88%}}
 
 /* Current builds presentation */
 .builds-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-top:12px}
