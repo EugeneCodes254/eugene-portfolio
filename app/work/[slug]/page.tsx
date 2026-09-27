@@ -26,7 +26,7 @@ const caseStudies: Record<string, CaseStudy> = {
     problem: "Security teams need more than a brochure website. They need secure access, structured workflows and a foundation that can grow into a complete operations platform without turning the codebase into a monolith.",
     solution: "I built a full-stack foundation with a Next.js frontend, Node.js/Express API and Prisma/PostgreSQL data layer. The authentication experience includes login, OTP verification, account recovery and password reset flows, while the backend is organized into maintainable modules.",
     role: ["Product-focused UI development", "Frontend and backend integration", "Authentication workflows", "API and database integration", "Architecture and troubleshooting"],
-    outcomes: ["Working authentication and account-recovery journey", "Clear separation between frontend and backend responsibilities", "REST API foundation for future operational modules", "Database-backed architecture ready for continued development"],
+    outcomes: ["Working authentication and account-recovery journey", "Clear separation between frontend and backend responsibilities", "REST API foundation for operational modules including incidents, personnel, sites and reports", "Database-backed architecture ready for continued development of security operations workflows"],
     stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js", "Express.js", "Prisma", "PostgreSQL"],
     features: ["Login and authentication", "OTP verification", "Password recovery", "REST API integration", "Modular backend", "Database integration", "Responsive interface"],
     architecture: ["Next.js / React UI", "REST API", "Express controllers + routes", "Prisma ORM", "PostgreSQL"],
