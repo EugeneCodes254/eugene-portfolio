@@ -28,6 +28,7 @@ const projects = [
     highlights: ["Luxury villa presentation", "Image gallery + property videos", "Responsive guest experience", "Booking enquiry flow"],
     stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     href: "https://github.com/EugeneCodes254/destination-bofa",
+    caseStudy: "/work/destination-bofa",
   },
   {
     title: "BizFlow",
