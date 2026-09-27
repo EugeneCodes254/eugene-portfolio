@@ -68,6 +68,7 @@ const caseStudies: Record<string, CaseStudy> = {
     visualLabel: "BIZFLOW / SME OPERATIONS",
     visualLines: ["Sales & invoices", "Customers & products", "Payments & expenses", "PostgreSQL data layer"],
   },
+};
 
 export function generateStaticParams() {
   return Object.keys(caseStudies).map((slug) => ({ slug }));
