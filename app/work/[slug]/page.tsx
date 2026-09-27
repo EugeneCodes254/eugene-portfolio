@@ -50,7 +50,6 @@ const caseStudies: Record<string, CaseStudy> = {
     visualLabel: "RETAIL POS / OFFLINE",
     visualLines: ["Scan product", "Build cart", "Calculate total", "Print receipt"],
   },
-};
 
   bizflow: {
     slug: "bizflow",
