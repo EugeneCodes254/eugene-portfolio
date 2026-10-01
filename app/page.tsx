@@ -116,7 +116,7 @@ export default function Home() {
           <div>
             <div className="eyebrow">Software Developer · Mombasa, Kenya</div>
             <h1>I build <span>useful software</span> for real-world problems.</h1>
-            <p>I&apos;m Eugene Kinyangi, a Computer Science developer building full-stack web applications, business systems, e-commerce experiences and practical AI/data workflows.</p>
+            <p>I&apos;m Eugene Kinyangi, a Computer Science graduate and software developer building full-stack web applications, business systems, e-commerce experiences and practical AI/data workflows.</p>
             <div className="actions"><a className="button primary" href="#work">Explore my work ↓</a><a className="button" href="mailto:kinyangie@gmail.com">Hire me</a><a className="button" href="mailto:kinyangie@gmail.com?subject=Request%20for%20CV">Request CV</a><a className="button" href="https://github.com/EugeneCodes254">GitHub ↗</a></div>
           </div>
           <aside className="hero-card">
