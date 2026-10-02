@@ -95,6 +95,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: study ? `${study.title} | Eugene Kinyangi` : "Project | Eugene Kinyangi",
     description: study?.summary,
+    alternates: {
+      canonical: `/work/${slug}`,
+    },
+    openGraph: {
+      title: study ? `${study.title} | Eugene Kinyangi` : "Project | Eugene Kinyangi",
+      description: study?.summary,
+      url: `https://eugenekinyangi.vercel.app/work/${slug}`,
+      type: "website",
+    },
   };
 }
 
