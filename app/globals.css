@@ -150,3 +150,43 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-s
     grid-template-columns: 1fr;
   }
 } 
+
+
+/* Premium corporate enhancements */
+.tech-strip{padding:18px 0;border-bottom:1px solid var(--line);background:rgba(11,23,38,.72)}
+.tech-strip .container{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.tech-strip>div>span{font-size:9px;letter-spacing:.16em;color:var(--muted-2);font-weight:800}
+.tech-strip>div>div{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.tech-strip b{padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:rgba(255,255,255,.018);color:#CBD5E1;font-size:10px;font-weight:600}
+.hero-command{background:linear-gradient(145deg,rgba(16,31,48,.98),rgba(7,17,31,.98))}
+.hero-command-top{display:flex;justify-content:space-between;align-items:center}
+.hero-command .hero-card-top b{margin-left:auto;color:var(--blue-bright);font-size:9px;letter-spacing:.14em}
+.hero-command-title{font-size:13px;color:#CBD5E1;padding:18px 0 10px;font-weight:700}
+.hero-command-list>div{display:grid;grid-template-columns:25px 1fr auto;gap:10px;align-items:center;padding:14px 0;border-bottom:1px solid rgba(148,163,184,.09)}
+.hero-command-list span{color:var(--blue-bright);font-size:9px;font-weight:800}
+.hero-command-list strong{font-size:12px;color:#F1F5F9}
+.hero-command-list i{font-style:normal;color:#64748B;font-size:8px;font-weight:800;letter-spacing:.1em}
+.hero-command-footer{display:flex;justify-content:space-between;gap:10px;padding-top:17px;color:#64748B;font-size:8px;letter-spacing:.1em}
+.hero-command-footer strong{color:#7DD3FC;font-size:8px}
+.build-pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:40px}
+.build-pillars article{position:relative;padding:26px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#0F2032,#091522);overflow:hidden;transition:.25s}
+.build-pillars article:hover{transform:translateY(-4px);border-color:rgba(47,128,237,.42);box-shadow:0 20px 55px rgba(0,0,0,.18)}
+.build-pillars article:after{content:"";position:absolute;width:120px;height:120px;right:-70px;bottom:-70px;border-radius:50%;background:rgba(47,128,237,.08);filter:blur(12px)}
+.build-pillars span{color:var(--blue-bright);font-size:9px;font-weight:800;letter-spacing:.14em}
+.build-pillars h3{font-size:19px;margin:34px 0 9px}
+.build-pillars p{margin:0;color:var(--muted);font-size:12px;line-height:1.7}
+.philosophy-section{position:relative}
+.philosophy-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;margin-top:35px;padding:34px;border:1px solid rgba(47,128,237,.25);border-radius:24px;background:radial-gradient(circle at 100% 0,rgba(47,128,237,.12),transparent 38%),linear-gradient(145deg,#0D1B2A,#07111F)}
+.philosophy-grid h2{font-size:clamp(34px,4vw,50px);margin-top:0}
+.philosophy-points{display:flex;flex-direction:column}
+.philosophy-points article{display:grid;grid-template-columns:42px 1fr;gap:15px;padding:18px 0;border-bottom:1px solid rgba(148,163,184,.1)}
+.philosophy-points article:last-child{border-bottom:0}
+.philosophy-points span{color:var(--blue-bright);font-size:10px;font-weight:800;letter-spacing:.12em}
+.philosophy-points h3{margin:0 0 5px;font-size:16px}
+.philosophy-points p{margin:0;color:var(--muted);font-size:12px;line-height:1.6}
+.availability{display:flex;justify-content:center;align-items:center;gap:16px;flex-wrap:wrap;margin:-2px auto 28px}
+.availability span{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border:1px solid rgba(56,189,248,.25);border-radius:999px;background:rgba(56,189,248,.05);color:#7DD3FC;font-size:9px;font-weight:800;letter-spacing:.11em}
+.availability span i{width:6px;height:6px;border-radius:50%;background:#38BDF8;box-shadow:0 0 0 5px rgba(56,189,248,.08)}
+.availability>b{font-size:9px;letter-spacing:.13em;color:var(--muted-2)}
+@media(max-width:950px){.build-pillars{grid-template-columns:repeat(2,1fr)}.philosophy-grid{grid-template-columns:1fr;gap:30px}.tech-strip>div{align-items:flex-start;flex-direction:column}.tech-strip>div>div{justify-content:flex-start}}
+@media(max-width:720px){.build-pillars{grid-template-columns:1fr}.hero-command-list>div{grid-template-columns:22px 1fr}.hero-command-list i{display:none}.hero-command-footer{flex-direction:column}.tech-strip>div>div{flex-wrap:nowrap;overflow:hidden;width:100%}.tech-strip b{flex:0 0 auto}.philosophy-grid{padding:24px}.availability{margin-bottom:22px}}
