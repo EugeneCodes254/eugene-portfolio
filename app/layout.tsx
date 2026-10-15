@@ -76,7 +76,7 @@ const personJsonLd = {
   description:
     "Kenyan software developer and product builder focused on full-stack development, business systems, cybersecurity and AI/data workflows.",
   email: "mailto:kinyangie@gmail.com",
-  sameAs: ["https://github.com/EugeneCodes254"],
+  sameAs: ["https://github.com/EugeneCodes254", "https://www.linkedin.com/in/eugene-kinyangia-780951440/"],
   knowsAbout: [
     "Software development",
     "Full-stack development",
