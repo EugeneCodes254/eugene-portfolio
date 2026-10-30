@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | Eugene Kinyangi",
   },
   description:
-    "Eugene Kinyangi is a Kenyan software developer and product builder creating full-stack web applications, business systems, mobile products and practical AI/data solutions.",
+    "Eugene Kinyangi is a Kenya-based software developer and product builder working across full-stack web development, business systems, mobile applications, cybersecurity and AI/data workflows. Available for freelance and remote opportunities.",
   keywords: [
     "Eugene Kinyangi",
     "Software Developer Kenya",
@@ -20,6 +20,8 @@ export const metadata: Metadata = {
     "React Developer",
     "Node.js Developer",
     "Product Builder Kenya",
+    "Freelance Web Developer Kenya",
+    "Remote Software Developer",
     "Business Systems Developer",
     "Cybersecurity Kenya",
     "AI Data",
