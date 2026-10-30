@@ -271,3 +271,46 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-s
 @media(prefers-reduced-motion:reduce){
   [data-reveal]{opacity:1;transform:none}
 }
+
+
+/* Chocolate City portfolio project — real photography from the project asset library */
+.chocolate-city-preview{
+  min-height:220px;
+  justify-content:flex-end;
+  align-items:flex-end;
+  padding:20px;
+  background-image:linear-gradient(90deg,rgba(10,12,14,.82),rgba(10,12,14,.15)),url("https://raw.githubusercontent.com/EugeneCodes254/chocolate-city/main/public/images/restaurant/restaurant-photo-02.jpg");
+  background-size:cover;
+  background-position:center 48%;
+}
+.chocolate-preview-frame{
+  width:100%;
+  min-height:170px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  align-items:flex-start;
+  gap:10px;
+  padding:18px;
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:12px;
+  background:linear-gradient(90deg,rgba(12,13,14,.52),rgba(12,13,14,.02));
+}
+.chocolate-preview-frame span{
+  color:#F4D7A1;
+  font-size:8px;
+  font-weight:800;
+  letter-spacing:.18em;
+}
+.chocolate-preview-frame strong{
+  color:#fff;
+  font-family:Georgia,serif;
+  font-size:clamp(25px,3vw,36px);
+  line-height:.95;
+  font-weight:500;
+}
+.chocolate-preview-frame small{
+  color:rgba(255,255,255,.8);
+  font-size:8px;
+  letter-spacing:.16em;
+}
